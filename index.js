@@ -48,9 +48,9 @@ async function main() {
     let hint, password;
     if ("h" in params) {
       hint = params["h"];
-      password = prompt(`Please enter the password to unlock the link.\n\nHint: ${hint}`);
+      password = prompt(`Silakan masukkan kata sandi untuk membuka kunci tautan.\n\nHint: ${hint}`);
     } else {
-      password = prompt("Please enter the password to unlock the link.");
+      password = prompt("Silakan masukkan kata sandi untuk membuka kunci tautan.");
     }
 
     // Decrypt and redirect if possible
@@ -59,7 +59,7 @@ async function main() {
       url = await api.decrypt(encrypted, password, salt, iv);
     } catch {
       // Password is incorrect.
-      error("Password is incorrect.");
+      error("Katasandi salah.");
 
       // Set the "decrypt without redirect" URL appropriately
       document.querySelector("#no-redirect").href =
