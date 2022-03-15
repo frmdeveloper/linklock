@@ -126,9 +126,6 @@ async function onEncrypt() {
   document.querySelector("#output").value = output;
   highlight("output");
 
-  // Adjust "Hidden Bookmark" link
-  document.querySelector("#bookmark").href = `https://jstrieb.github.io/link-lock/hidden/#${encrypted}`;
-
   // Adjust "Open in New Tab" link
   document.querySelector("#open").href = output;
 
