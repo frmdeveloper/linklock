@@ -10,7 +10,7 @@
 
   <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
 
-  <title>Link Lock - Password-protect links</title>
+  <title>Link Lock</title>
 
   <!-- Styles -->
   <link rel="stylesheet" href="../style.css" type="text/css" />
@@ -67,11 +67,11 @@
   <!-- Main form -->
   <div class="form">
     <div class="labeled-input">
-      <label for="url">secret link</label>
+      <label for="url">URL</label>
       <input type="url" id="url" placeholder="https://" oninvalid="if (!this.validity.customError) this.setCustomValidity('Please enter a valid URL. Make sure to include \'http://\' or \'https://\' at the beginning.')" oninput="this.setCustomValidity('')" required />
     </div>
     <div class="labeled-input hint">
-      <label for="url">hint (optional)</label>
+      <label for="url">hint (kosongin)</label>
       <textarea id="hint" rows="1"></textarea>
     </div>
     <div class="split-row">
