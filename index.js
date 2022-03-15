@@ -91,7 +91,7 @@ async function main() {
       // the unlocked destination. This is dangerous information leakage.
       window.location.href = url;
     } catch {
-      error("A corrupted URL was encrypted. Cannot redirect.");
+      error("URL yang rusak telah dienkripsi. Tidak dapat mengalihkan.");
       console.log(url);
       return;
     }
