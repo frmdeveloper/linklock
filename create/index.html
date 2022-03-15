@@ -106,25 +106,18 @@
 
   <!-- Output area -->
   <div class="output">
-    <label for="output">output</label>
+    <label for="output">Hasil</label>
     <input type="text" id="output" readonly/>
-    <button id="copy" onclick="onCopy('output')">Copy</button>
-    <a href="../hidden" id="bookmark" target="_blank"><button>Create Hidden Bookmark</button></a>
-    <a href="" id="open" target="_blank"><button>Open in New Tab</button></a>
+    <button id="copy" onclick="onCopy('output')">Salin</button>
+    <a href="" id="open" target="_blank"><button>Buka di tab baru</button></a>
     <!-- Special incantation to make TinyURL work -->
     <form action="https://tinyurl.com/create.php" method="get" target="_blank" style="display: inline;">
       <input type="hidden" id="source" name="source" value="indexpage" />
       <input type="hidden" id="tinyurl" name="url" value = "" />
-      <button>Get Shortened Link</button>
+      <button>perpendek link</button>
     </form>
-    <p class="alert">Copied</p>
+    <p class="alert">Tersalin</p>
   </div>
-
-  <!-- Page footer -->
-  <footer>
-  <hr />
-  <p class="copyright">Created by <a href="https://jstrieb.github.io">Jacob Strieb</a>.</p>
-  </footer>
 </body>
 
 </html>
