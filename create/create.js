@@ -121,7 +121,7 @@ async function onEncrypt() {
 
   const encrypted = await generateFragment(url, password, hint, useRandomSalt,
       useRandomIv);
-  const output = `${location.href.split('/create')[0]}/linklock/#${encrypted}`;
+  const output = `${location.href.split('/create')[0]}/#${encrypted}`;
 
   document.querySelector("#output").value = output;
   highlight("output");
