@@ -56,26 +56,26 @@
   <!-- Display errors in a big red box -->
   <div class="error red-border" style="display: none">
     <p id="errortext">Error</p>
-    <button onclick="main()">Try again</button>
+    <button onclick="main()">Coba ulanh</button>
   </div>
 
   <!-- Main form -->
   <div class="form">
     <div class="labeled-input">
-      <label for="url">URL (wajib)</label>
+      <label for="url">Link (wajib)</label>
       <input type="url" id="url" placeholder="https://" oninvalid="if (!this.validity.customError) this.setCustomValidity('Please enter a valid URL. Make sure to include \'http://\' or \'https://\' at the beginning.')" oninput="this.setCustomValidity('')" required />
     </div>
     <div class="labeled-input hint">
-      <label for="url">hint (sunnah)</label>
+      <label for="url">hint (kosongi jika tdk paham)</label>
       <textarea id="hint" rows="1"></textarea>
     </div>
     <div class="split-row">
       <div class="labeled-input password">
-        <label for="password">password (wajib)</label>
+        <label for="password">password</label>
         <input type="password" id="password" />
       </div>
       <div class="labeled-input confirm-password">
-        <label for="confirm-password">confirm password (wajib)</label>
+        <label for="confirm-password">konfirmasi password</label>
         <input type="password" id="confirm-password" oninput="this.setCustomValidity('')" />
       </div>
     </div>
